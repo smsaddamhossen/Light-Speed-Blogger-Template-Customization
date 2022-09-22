@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Container for flexboxes */
+      #beakingnews {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        background: #ffffff;
+        overflow: hidden;
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: &#39;
+        Tiro Bangla&#39;
+        ,
+        sans-serif,
+        Hind Siliguri;
+      }
+
+      /* Create four equal columns */
+      .title {
+        flex: 15%;
+        display: block;
+        float: left;
+        padding: 0 7px;
+        color: #c50100;
+        background: #ffffff;
+        border-right: 1px solid rgba(0 0 0 / 0.18);
+      }
+
+      .update {
+        flex: 85%;
+        list-style: none;
+        padding: 4px;
+        padding: 0;
+      }
+
+      /* On screens that are 992px wide or less, go from four columns to two columns */
+      @media screen and (max-width: 992px) {
+        .title {
+          flex: 15%;
+          display: block;
+          float: left;
+          padding: 0 7px;
+          color: #c50100;
+          background: #ffffff;
+          border-right: 1px solid rgba(0 0 0 / 0.18);
+        }
+
+        .update {
+          flex: 85%;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 663px) {
+        .title {
+          flex: 100%;
+          display: block;
+          float: left;
+          padding: 0 7px;
+          color: #c50100;
+          background: #ffffff;
+          border-right: 1px solid rgba(0 0 0 / 0.18);
+        }
+
+        .update {
+          flex: 100%;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="beakingnews">
+      <div class="title">
+        <p>Column 1</p>
+      </div>
+      <div class="update">
+        <p>Column 2</p>
+      </div>
+    </div>
+  </body>
+</html>
