@@ -1696,7 +1696,7 @@ disqusShortname = "pikitemplates";
     }   
     /* Create four equal columns */
     #beakingnews .tulisbreaking{
-
+      
       display:block;
       float:left;
       padding:0 7px;
@@ -1705,9 +1705,9 @@ disqusShortname = "pikitemplates";
       background: #ffffff;
       border-right: 1px solid rgba(0 0 0 / 0.18);
     }
-    #recentpostbreaking{float:left}
-    #recentpostbreaking ul,#recentpostbreaking li {
-      
+    #recentpostbreaking{color: black;float:left}
+    #recentpostbreaking ul{font-color: #000000;},#recentpostbreaking li {
+      font-color: #000000;
       list-style: none;
       padding: 4px;
       padding: 0;
@@ -2318,9 +2318,9 @@ disqusShortname = "pikitemplates";
           <b:includable id='snippetedPosts'><b:comment>Replaced</b:comment></b:includable>
         </b:widget>
       </b:section>
-
+<!-- Recent Post S M Saddam Hossen-->
         <div class='clearfix'/>
-        <b:section class='LightSpeedPro' id='top-NewsPro-main-widget-2' maxwidgets='1' name='Fresh Posts Section' showaddelement='no'>
+        <b:section class='LightSpeedPro' id='top-NewsPro-main-widget-2' maxwidgets='3' name='Fresh Posts Section' showaddelement='no'>
           <b:widget id='HTML23' locked='false' title='সর্বশেষ' type='HTML' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='content'>8/sgrid/recent</b:widget-setting>
@@ -2336,12 +2336,103 @@ disqusShortname = "pikitemplates";
   </b:if>
       </div>
       </div>
+
+
+<!-- Category Post S M Saddam Hossen-->
   <div class='clearfix'/>
   <b:if cond='data:view.isHomepage'>
  <div id='footer-ads'>
   <div class='container outer-container'>
     <!-- Center Featured Posts -->
-      <b:section class='LightSpeedPro' id='top-lights-set-widget1' maxwidgets='3' name='Footer Feature Posts' showaddelement='no'>
+      <b:section class='LightSpeedPro' id='top-lights-set-widget1' maxwidgets='4' name='Footer Feature Posts' showaddelement='no'>
+        <b:widget id='HTML182' locked='true' title='সংবাদ' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>5/block/স&#2434;ব&#2494;দ</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML192' locked='true' title='প্রকৃতি' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>5/block/প&#2509;রক&#2499;ত&#2495;</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML202' locked='true' title='গাছগাছালি' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>5/block/গ&#2494;ছগ&#2494;ছ&#2494;ল&#2495;</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML24' locked='false' title='র‍্যানডম' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>4/sgrid/random</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML183' locked='true' title='স্বাস্থ্য' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>5/block/স্বাস্থ্য</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML193' locked='true' title='কৃষি ও অর্থনীতিি' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>5/block/ক&#2499;ষ&#2495; ও অর&#2509;থন&#2496;ত&#2495;</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML203' locked='true' title='শিল্প ও কারখানা' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>5/block/শ&#2495;ল&#2509;প%20ও%20ক&#2494;রখ&#2494;ন&#2494;</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML25' locked='false' title='শিক্ষা সাহিত্য সংস্কৃতি' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>4/sgrid/শ&#2495;ক&#2509;ষ&#2494;-স&#2494;হ&#2495;ত&#2509;য-স&#2434;স&#2509;ক&#2499;ত&#2495;</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
         <b:widget id='HTML181' locked='true' title='বিজ্ঞান ও প্রযুক্তি' type='HTML' visible='true'>
           <b:widget-settings>
             <b:widget-setting name='content'>5/block/ব&#2495;জ&#2509;ঞ&#2494;ন-প&#2509;রয&#2497;ক&#2509;ত&#2495;</b:widget-setting>
@@ -2367,6 +2458,17 @@ disqusShortname = "pikitemplates";
         <b:widget id='HTML201' locked='true' title='যাপিত জীবন' type='HTML' visible='true'>
           <b:widget-settings>
             <b:widget-setting name='content'>5/block/য&#2494;প&#2495;ত-জ&#2496;বন</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML26' locked='false' title='অন্যান্য' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>4/sgrid/অন&#2509;য&#2494;ন&#2509;য</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
   <b:include name='widget-title'/>
@@ -3666,7 +3768,7 @@ function optimizeImageiki(content) {
     var turnIdx = src.lastIndexOf('/', joinIdx - 1)
     if(!turnIdx) turnIdx = 0
     var enterStr = src.substring(turnIdx, joinIdx)
-    if(enterStr.match(/((\/s[0-9])|(\/w[0-9]))+/g) || enterStr == '/d') enterStr = '/w74-h74-p-k-no-nu'
+    if(enterStr.match(/((\/s[0-9])|(\/w[0-9]))+/g) || enterStr == '/d') enterStr = '/w680'
     var $src = [
         src.substring(0, turnIdx),
         enterStr,
