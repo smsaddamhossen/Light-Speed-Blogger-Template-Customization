@@ -1139,7 +1139,7 @@ table td{border:solid 1px #fab;width:100px;word-wrap:break-word;}
 .LoadsSpeedPro .LightSpeed-holds .item2{grid-column:5/9;}
 .LoadsSpeedPro .LightSpeed-holds .item3{grid-column:1/5;} 
 .LoadsSpeedPro .LightSpeed-holds .item4{grid-column:5/9;}
-.LoadsSpeedPro{width:initial;}
+.LoadsSpeedPro{width:100%;}
 .LoadsSpeedPro .widget .LightSpeedArea.item1 .post-filter-link,.LoadsSpeedPro .widget .LightSpeedArea .post-filter-link{height:300px;margin:5px 0;}
 .LightSpeedArea:is(.item0,.item1,.item2,.item3,.item4) .entry-title{font-size:24px;}
 .LoadsSpeedPro .LightSpeed-holds:is(.item0,.item2,.item3,.item4) .label-news-flex{display:block}
@@ -2056,7 +2056,7 @@ disqusShortname = "pikitemplates";
  <div class='ticker'>
 <div class='container'>
   <b:section class='LightSpeedTic' id='hot-posts' maxwidgets='1' name='Breaking Ticker' showaddelement='yes'>
-    <b:widget id='PopularPosts3' locked='false' title='সর্বশেষ' type='PopularPosts' version='2' visible='true'>
+    <b:widget id='PopularPosts3' locked='false' title='সর্বশেষ' type='PopularPosts' version='2' visible='false'>
       <b:widget-settings>
         <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
         <b:widget-setting name='showThumbnails'>true</b:widget-setting>
@@ -2170,8 +2170,8 @@ disqusShortname = "pikitemplates";
                <b:section class='main-ads-pikihome' id='main-ads1' maxwidgets='2' name='Ads Placement' showaddelement='yes'>
                  <b:widget id='HTML2' locked='false' title='Latest' type='HTML' visible='true'>
                    <b:widget-settings>
-                     <b:widget-setting name='content'>&lt;div id=&#39;beakingnews&#39;&gt;&lt;span class=&#39;tulisbreaking&#39;&gt;&lt;i class=&quot;fa-solid fa-bolt-lightning&quot;&gt;&lt;/i&gt; &lt;b&gt;সর&#2509;বশ&#2503;ষ&lt;/b&gt;&lt;/span&gt; &#2404;
-    &lt;div id=&#39;recentpostbreaking&#39;&gt;Loading...&lt;/div&gt;
+                     <b:widget-setting name='content'>&lt;div id=&#39;beakingnews&#39;&gt;&lt;span class=&#39;tulisbreaking&#39;&gt;&lt;i class=&quot;fa-solid fa-bolt-lightning&quot;&gt;&lt;/i&gt; &lt;b&gt;সর&#2509;বশ&#2503;ষ&lt;/b&gt;&lt;/span&gt; 
+    &lt;div id=&#39;recentpostbreaking&#39;&gt;ল&#2507;ড হচ&#2509;ছ&#2503;...&lt;/div&gt;
       
     &lt;div style=&#39;clear: both;&#39;/&gt;&lt;/div&gt;&lt;/div&gt;</b:widget-setting>
                    </b:widget-settings>
@@ -2194,6 +2194,27 @@ disqusShortname = "pikitemplates";
 </b:includable>
                  </b:widget>
                </b:section>
+
+
+<!-- Featured Post S M Saddam Hossen-->
+          <!--div class='clearfix'/>
+  <b:if cond='data:view.isHomepage'>
+      <b:section class='LoadsSpeedPro flex' id='ft-post1' maxwidgets='1' name='Top Feature Section' showaddelement='yes'>
+        <b:widget id='HTML301' locked='false' title='featured' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>featured/recent</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+      </b:section>
+      </b:if-->
+
+
           <div class='clearfix'/>
   <b:if cond='data:view.isHomepage'>
       <b:section class='LoadsSpeedPro flex' id='ft-post' maxwidgets='1' name='Top Feature Section' showaddelement='yes'>
@@ -2202,7 +2223,7 @@ disqusShortname = "pikitemplates";
             <b:widget-setting name='numItemsToShow'>8</b:widget-setting>
             <b:widget-setting name='showThumbnails'>true</b:widget-setting>
             <b:widget-setting name='showSnippets'>true</b:widget-setting>
-            <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
+            <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -2297,11 +2318,12 @@ disqusShortname = "pikitemplates";
           <b:includable id='snippetedPosts'><b:comment>Replaced</b:comment></b:includable>
         </b:widget>
       </b:section>
+
         <div class='clearfix'/>
         <b:section class='LightSpeedPro' id='top-NewsPro-main-widget-2' maxwidgets='1' name='Fresh Posts Section' showaddelement='no'>
-          <b:widget id='HTML23' locked='false' title='র‍্যানডম' type='HTML' visible='true'>
+          <b:widget id='HTML23' locked='false' title='সর্বশেষ' type='HTML' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='content'>4/sgrid/random</b:widget-setting>
+              <b:widget-setting name='content'>8/sgrid/recent</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
   <b:include name='widget-title'/>
@@ -2314,7 +2336,64 @@ disqusShortname = "pikitemplates";
   </b:if>
       </div>
       </div>
-     <div class='clearfix'/>
+  <div class='clearfix'/>
+  <b:if cond='data:view.isHomepage'>
+ <div id='footer-ads'>
+  <div class='container outer-container'>
+    <!-- Center Featured Posts -->
+      <b:section class='LightSpeedPro' id='top-lights-set-widget1' maxwidgets='3' name='Footer Feature Posts' showaddelement='no'>
+        <b:widget id='HTML181' locked='true' title='বিজ্ঞান ও প্রযুক্তি' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>5/block/ব&#2495;জ&#2509;ঞ&#2494;ন-প&#2509;রয&#2497;ক&#2509;ত&#2495;</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML191' locked='true' title='খেলাধুলা' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>5/block/খ&#2503;ল&#2494;ধ&#2497;ল&#2494;</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML201' locked='true' title='যাপিত জীবন' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>5/block/য&#2494;প&#2495;ত-জ&#2496;বন</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+        </b:widget>
+      </b:section>
+    <div class='clearfix'/>
+  <b:section class='main-ads-pikihome' id='main-ads21' maxwidgets='2' name='Ads Placement' showaddelement='yes'>
+    <b:widget id='HTML151' locked='false' title='' type='HTML' visible='true'>
+      <b:widget-settings>
+        <b:widget-setting name='content'><![CDATA[<a class='piki-ads' href="javascript:;">Your Responsive Ads code (Google Ads)</a>]]></b:widget-setting>
+      </b:widget-settings>
+      <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+    </b:widget>
+  </b:section>
+          <div class='clearfix'/>
+      </div>
+  </div>
+  </b:if>
   <!-- Content Wrapper -->
   <div id='center-container'>
     <div class='container outer-container'>
@@ -3090,132 +3169,6 @@ disqusShortname = "pikitemplates";
               </script>
             </b:includable>
           </b:widget>
-          <b:widget cond='data:view.isHomepage' id='FeaturedPost1' locked='false' title='Featured Post' type='FeaturedPost' version='2' visible='false'>
-            <b:widget-settings>
-              <b:widget-setting name='showSnippet'>true</b:widget-setting>
-              <b:widget-setting name='showPostTitle'>true</b:widget-setting>
-              <b:widget-setting name='postId'>0</b:widget-setting>
-              <b:widget-setting name='showFirstImage'>true</b:widget-setting>
-              <b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main' var='this'>
-              <b:include name='widget-title'/>
-              <div class='widget-content'>
-                <b:include name='snippetedPosts'/>
-              </div>
-            </b:includable>
-            <b:includable id='blogThisShare'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='bylineByName' var='byline'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='bylineRegion' var='regionItems'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='commentsLink'>
-          <a class='comment-link' expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
-            <b:include data='{ iconClass: &quot;touch-icon&quot; }' name='commentIcon'/>
-            <span class='num_comments'>
-              <b:if cond='data:post.numberOfComments &gt; 0'>
-                <b:message name='messages.numberOfComments'>
-                  <b:param expr:value='data:post.numberOfComments' name='numComments'/>
-                </b:message>
-                <b:else/>
-                <data:messages.postAComment/>
-              </b:if>
-            </span>
-          </a>
-        </b:includable>
-            <b:includable id='commentsLinkIframe'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='emailPostIcon'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='facebookShare'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='footerBylines'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='googlePlusShare'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='headerByline'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='linkShare'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='otherSharingButton'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='platformShare'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postAuthor'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postCommentsLink'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postContent' var='post'>
-      <div class='post'>
-        <div class='post-content'>
-          <a class='post-filter-link' expr:href='data:post.url'>
-            <b:if cond='data:post.featuredImage'>
-             <img class='snip-thumbnail' expr:alt='data:post.title ? data:post.title : data:messages.noTitle' expr:src='data:post.featuredImage.isYouTube ? resizeImage(data:post.featuredImage.youtubeMaxResDefaultUrl.jsonEscaped, 680) : resizeImage(data:post.featuredImage, 680)'/>
-              <b:else/>
-              <img class='snip-thumbnail' expr:alt='data:post.title ? data:post.title : data:messages.noTitle' src='https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w680/nth.png'/>
-            </b:if><b:class expr:name='data:post.featuredImage.isYouTube ? &quot;video-nos&quot; : &quot;image-nos&quot;'/>
-            <span class='label-news'><data:post.labels.last.name/></span>
-          </a>
-          <div class='freelyt-wcvbf-box'>
-            <h2 class='entry-title vcard'>
-              <a expr:href='data:post.url' expr:title='data:post.title' rel='bookmark'><b:eval expr='data:post.title ? data:post.title : data:messages.noTitle'/></a>
-            </h2>
-            <div class='post-snip'>
-              <span class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </b:includable>
-            <b:includable id='postFooterJumpLink'>
-          <b:comment>Ripple, and show &#39;keep reading&#39; as the default.</b:comment>
-          <div class='jump-link flat-button ripple'>
-            <a expr:href='data:post.hasJumpLink ? data:post.url fragment &quot;more&quot; : data:post.url' expr:title='data:post.title'>
-              <data:blog.jumpLinkMessage/>
-            </a>
-          </div>
-        </b:includable>
-            <b:includable id='postInfo' var='post'>
-          <div class='post-footer'>
-            <b:include name='footerBylines'/>
-            <b:include cond='data:widget.type == &quot;Blog&quot;' data='post' name='postFooterAuthorProfile'/>
-          </div>
-          <b:if cond='data:view.isSingleItem'>
-            <b:include data='post' name='postFooterJumpLink'/>
-          </b:if>
-        </b:includable>
-            <b:includable id='postJumpLink'>
-          <b:comment>Overridden, and migrated to postFooter. Called as postFooterJumpLink.</b:comment>
-        </b:includable>
-            <b:includable id='postLabels'>
-          <b:comment>We don&#39;t display labels on the home page.</b:comment>
-          <b:if cond='data:view.isMultipleItems and data:widget.type == &quot;Blog&quot;'>
-            <b:include name='super.postLabels'/>
-          </b:if>
-        </b:includable>
-            <b:includable id='postLocation'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postReactions'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postShareButtons'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postSnippet'>
-              <div class='post-snippet'>
-                <b:eval expr='snippet(data:post.body, {length: 225, links: false, linebreaks: false})'/>
-              </div>
-            </b:includable>
-            <b:includable id='postTimestamp'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='sharingButton'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='sharingButtonContent'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='sharingButtons'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='sharingButtonsMenu'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='sharingPlatformIcon'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='snippetedPostByline'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='snippetedPostContent'>
-              <b:include cond='data:this.postDisplay.showFeaturedImage' name='snippetedPostThumbnail'/>
-              <b:include cond='data:this.postDisplay.showTitle' name='snippetedPostTitle'/>
-              <b:include cond='data:this.postDisplay.showSnippet' data='post' name='postSnippet'/>
-            </b:includable>
-            <b:includable id='snippetedPostThumbnail'>
-              <b:if cond='data:this.postDisplay.showFeaturedImage'>
-                <div class='snippet-thumbnail'>
-                  <a expr:href='data:post.url' expr:title='data:post.title'>
-                    <img expr:alt='data:post.title' expr:data-src='data:post.featuredImage ? resizeImage(data:post.featuredImage, 300, &quot;300:200&quot;) :  resizeImage(&quot;https://1.bp.blogspot.com/-aTtBK4N3Zi4/XBjti30MYbI/AAAAAAAAHAE/m2-dDbiVVEICgZ_E59Veb5ahuXf2aimmgCLcBGAs/s1600/igniplex-no-image.png&quot;, 300, &quot;300:200&quot;)' expr:title='data:post.title' src='https://cdn.staticaly.com/img/1.bp.blogspot.com/-Vf8I4C4T350/WkPqXOy5pLI/AAAAAAAADYg/KxfXSvwJSX0OYtIzrP5C3AXN1EnESLTHgCLcBGAs/s1600/loader.gif'/>
-                  </a>
-                </div>
-              </b:if>
-            </b:includable>
-            <b:includable id='snippetedPostTitle'>
-              <h3 class='post-title'>
-                <a expr:href='data:post.url' expr:title='data:post.title'><data:post.title/></a>
-              </h3>
-            </b:includable>
-            <b:includable id='snippetedPosts'><b:comment>Replaced</b:comment></b:includable>
-          </b:widget>
         </b:section>
                 <div id='custom-ads-placeholder'>
           <b:section cond='data:view.isPost' id='upper-ad' maxwidgets='1' name='Inside Post Ads' showaddelement='no'>
@@ -3471,8 +3424,8 @@ disqusShortname = "pikitemplates";
  <div id='footer-ads'>
   <div class='container outer-container'>
     <!-- Center Featured Posts -->
-      <b:section class='LightSpeedPro' id='top-lights-set-widget' maxwidgets='3' name='Footer Feature Posts' showaddelement='no'>
-        <b:widget id='HTML18' locked='true' title='বিজ্ঞান ও প্রযুক্তি' type='HTML' visible='true'>
+      <!--b:section class='LightSpeedPro' id='top-lights-set-widget' maxwidgets='3' name='Footer Feature Posts' showaddelement='no'>
+        <b:widget id='HTML18' locked='true' title='ব&#2495;জ&#2509;ঞ&#2494;ন ও প&#2509;রয&#2497;ক&#2509;ত&#2495;' type='HTML' visible='true'>
           <b:widget-settings>
             <b:widget-setting name='content'>5/block/ব&#2495;জ&#2509;ঞ&#2494;ন-প&#2509;রয&#2497;ক&#2509;ত&#2495;</b:widget-setting>
           </b:widget-settings>
@@ -3483,7 +3436,7 @@ disqusShortname = "pikitemplates";
   </div>
 </b:includable>
         </b:widget>
-        <b:widget id='HTML19' locked='true' title='খেলাধুলা' type='HTML' visible='true'>
+        <b:widget id='HTML19' locked='true' title='খ&#2503;ল&#2494;ধ&#2497;ল&#2494;' type='HTML' visible='true'>
           <b:widget-settings>
             <b:widget-setting name='content'>5/block/খ&#2503;ল&#2494;ধ&#2497;ল&#2494;</b:widget-setting>
           </b:widget-settings>
@@ -3494,7 +3447,7 @@ disqusShortname = "pikitemplates";
   </div>
 </b:includable>
         </b:widget>
-        <b:widget id='HTML20' locked='true' title='যাপিত জীবন' type='HTML' visible='true'>
+        <b:widget id='HTML20' locked='true' title='য&#2494;প&#2495;ত জ&#2496;বন' type='HTML' visible='true'>
           <b:widget-settings>
             <b:widget-setting name='content'>5/block/য&#2494;প&#2495;ত-জ&#2496;বন</b:widget-setting>
           </b:widget-settings>
@@ -3505,7 +3458,7 @@ disqusShortname = "pikitemplates";
   </div>
 </b:includable>
         </b:widget>
-      </b:section>
+      </b:section-->
     <div class='clearfix'/>
   <b:section class='main-ads-pikihome' id='main-ads2' maxwidgets='2' name='Ads Placement' showaddelement='yes'>
     <b:widget id='HTML15' locked='false' title='' type='HTML' visible='true'>
@@ -3798,6 +3751,7 @@ function optimizeImageiki(content) {
                htmltype += '<div class="lightsTested">';
                break;
              case 'sgrid':
+               
              case 'related':
                htmltype += '<div class="LightSpeedWorks">';
                break;
@@ -3872,7 +3826,7 @@ function optimizeImageiki(content) {
                    }
                    break;
                  case 'sgrid':
-                   htmltype += '<div class="LightSpeedBot"><div class="LightSpeedSet-thumb"><a class="post-filter-link ' + yt + '" href="' + link + '"><img class="snip-thumbnail" alt="' + title + '" src="' + $src + '"/></a></div><div class="LightSpeedSet-box"><span class="label-news-flex-anywhere">' + tag + '</span><h2 class="entry-title"><a href="' + link + '">' + title + '</a></h2><div class="post-snip"><span class="post-date">' + date + '</span></div></div></div>';
+                   htmltype += '<div class="LightSpeedBot"><div class="LightSpeedSet-thumb"><a class="post-filter-link ' + yt + '" href="' + link + '"><img class="snip-thumbnail" alt="' + title + '" itemprop="url" src="' + $src + '"/></a></div><div class="LightSpeedSet-box"><span class="label-news-flex-anywhere">' + tag + '</span><h2 class="entry-title"><a href="' + link + '">' + title + '</a></h2><div class="post-snip"><span class="post-date">' + date + '</span></div></div></div>';
                    break;
                  case 'related':
                    htmltype += '<div class="LightSpeedSet"><div class="LightSpeedSet-thumb"><a class="post-filter-link ' + yt + '" href="' + link + '"><img class="snip-thumbnail" alt="' + title + '" src="' + $src + '"/></a></div><div class="LightSpeedSet-box"><h2 class="entry-title"><a href="' + link + '">' + title + '</a></h2><div class="post-snip"><span class="post-date">' + date + '</span></div></div></div>';
