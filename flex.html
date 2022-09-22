@@ -11,6 +11,8 @@
       #beakingnews {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
         margin: 0 auto;
         background: #ffffff;
         overflow: hidden;
@@ -92,3 +94,46 @@
     <div id='recentpostbreaking'>Loading...</div>
   </body>
 </html>
+
+
+//Alternate Deafault
+<style type='text/css'>
+    /* Container for flexboxes */
+    #beakingnews {
+      line-height:25px;
+      height:25px;
+      margin: 0 auto;
+      background: #ffffff;
+      overflow: hidden;
+      margin-top: 5px;
+      font-size: 16px;
+      font-weight: 400;
+      font-family:
+      &quot;Tiro Bangla&quot;,
+      sans-serif,
+      Hind Siliguri;
+    }   
+    /* Create four equal columns */
+    #beakingnews .tulisbreaking{
+
+      display:block;
+      float:left;
+      padding:0 7px;
+      margin:0 5px 0 0;
+      color: #c50100;
+      background: #ffffff;
+      border-right: 1px solid rgba(0 0 0 / 0.18);
+    }
+    #recentpostbreaking{float:left}
+    #recentpostbreaking ul,#recentpostbreaking li {
+      
+      list-style: none;
+      padding: 4px;
+      padding: 0;
+    }
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 663px) {
+      #beakingnews{
+        display:none;
+        }
+    }
